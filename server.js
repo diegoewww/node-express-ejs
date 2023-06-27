@@ -33,7 +33,7 @@ app.post('/addRapper', (request, response) => {
     db.collection('rappers').insertOne({stageName: request.body.stageName,
     birthName: request.body.birthName, likes: 0})
     .then(result => {
-        console.log('Rapper Added')
+        console.log('Rappper Added')
         response.redirect('/')
     })
     .catch(error => console.error(error))
